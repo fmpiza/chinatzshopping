@@ -33,7 +33,38 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-
+		<script>
+				// Get the video
+				var video = document.getElementById("myVideo");
+				// Get the button
+				var btn = document.getElementById("myBtn");
+				// Pause and play the video, and change the button text
+				function myFunction() {
+					if (video.paused) {
+						video.play();
+						btn.innerHTML = "Pause";
+					} else {
+						video.pause();
+						btn.innerHTML = "Play";
+					}
+				}
+				
+				@media(min-aspect-ratio: 16/9) {
+					video {
+						width: 30%;
+						height: auto;
+					}
+				}
+				@media(max-aspect-ratio: 16/9) {
+					video {
+						width: auto;
+						height: 30%;
+					}
+				}
+				
+				</script>
+				
+				
     </head>
 	<body>
 		<!-- HEADER -->
@@ -258,6 +289,43 @@
 			<!-- /container -->
 		</div>
 		<!-- /SECTION -->
+
+	<p>
+							
+						<div class="col-md-12">
+							<div class="hot-deal">
+								<ul class="hot-deal-countdown">
+									<li>
+										<div>
+											<h3>01</h3>
+											<span>Day (SHOP)</span>
+										</div>
+									</li>
+									<li>
+										<div>
+											<h3>5 - 7</h3>
+											<span>Days (Flight)</span>
+										</div>
+									</li>
+									<li>
+										<div>
+											<h3>25 - 30</h3>
+											<span>Days (Ship)</span>
+										</div>
+									</li>
+									
+								</ul>
+								<h2 class="text-uppercase">Business With Us</h2>
+								<p>Effective Buying and Order, 100%</p>
+								<br>
+							
+								</div>
+							
+						
+						</div>
+				
+					</p>
+
 
 		<!-- SECTION -->
 		<div class="section">
@@ -810,39 +878,27 @@
 		</div>
 		<!-- /SECTION -->
 
+
+<br>
 		<!-- HOT DEAL SECTION -->
 		<div id="hot-deal" class="section">
 			<!-- container -->
+		
 			<div class="container">
 				<!-- row -->
 				<div class="row">
-					<div class="col-md-12">
-						<div class="hot-deal">
-							<ul class="hot-deal-countdown">
-								<li>
-									<div>
-										<h3>01</h3>
-										<span>Day (SHOP)</span>
-									</div>
-								</li>
-								<li>
-									<div>
-										<h3>5 - 7</h3>
-										<span>Days (Flight)</span>
-									</div>
-								</li>
-								<li>
-									<div>
-										<h3>25 - 30</h3>
-										<span>Days (Ship)</span>
-									</div>
-								</li>
-								
-							</ul>
-							<h2 class="text-uppercase">Business With Us</h2>
-							<p>Effective Buying and Order, 100%</p>
-							<a class="primary-btn cta-btn" href="chinatzdisplay.mp4"><font color="white"> Play Video</a>
-						</div>
+						
+				
+							<br>
+							<center>
+									<!-- The video -->
+									<video autoplay muted loop id="myVideo"  width="370" height="250">
+											<source src="chinatzdisplay.mp4" type="video/mp4">
+										</video>
+									<!-- Optional: some overlay text to describe the video -->
+									
+									</center>
+							</div>
 						
 					
 					</div>
